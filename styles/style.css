@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.main {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.image {
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+}
+
+.banner {
+    background-size: cover;
+    background-position: center;
+}
+
+.image:hover {
+    filter: grayscale(0%);
+    transition: all .4s ease; 
+    cursor: pointer;
+}
+
+.fullscreen {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    z-index: 1;
+    filter: grayscale(0);
+    background-size: contain;
+}
+
+.color {
+    filter: grayscale(0);
+}
+    
+#div1 { 
+    grid-area: 1 / 1 / 4 / 5;    
+    background-image: url('../images/cute.png');
+    display: none;
+}
+#div2 { 
+    grid-area: 5 / 9 / 10 / 13;
+    background-image: url('../images/stack.jpg');
+    display: none;
+}
+#div3 { 
+    grid-area: 5 / 3 / 9 / 8; 
+    background-image: url('../images/trio.jpg');
+    display: none;
+}
+#div4 { 
+    grid-area: 1 / 5 / 4 / 7;
+    background-image: url('../images/imhungry.jpg');
+    display: none;
+}
+#div5 { 
+    grid-area: 1 / 10 / 5 / 13;
+    background-image: url('../images/overalls.jpg');
+    display: none;
+}
+#div6 {
+    grid-area: 3 / 1 / 7 / 4;
+    background-image: url('../images/sailormoon.jpg');
+    display: none;
+}
+#div7 {
+    grid-area: 5 / 7 / 9 / 11;
+    background-image: url('../images/boytired.jpg');
+    display: none;
+}
+#div8 { 
+    grid-area: 6 / 1 / 9 / 5;
+    background-image: url('../images/heart.jpg');
+    display: none;
+}
+#div9 { 
+    grid-area: 1 / 7 / 4 / 11;
+    background-image: url('../images/thisshitfire.jpg');
+    display: none;
+}
+#div10 { 
+    grid-area: 4 / 4 / 5 / 10;
+    background-image: url('../images/tired.jpg');
+    display: none;
+}
+
+#title { 
+    grid-area: 4 / 4 / 5 / 10;
+    color: white;
+    font-size: 60px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+h1 {
+    margin: 30px 15px 30px 15px;
+    text-shadow: 30px 30px black;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 3px;
+}
+
+button {
+    background-color: white;
+    background-size: 0 100%;
+    background-position: top;
+    border: 2px solid black;
+    color: black;
+    padding: 15px 55px;
+    margin: auto 50px;
+    box-shadow: 30px 30px black;
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-position 275ms ease;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: color 200ms ease;
+}
+
+button:hover {
+    background-image: url('../images/sailormoonpose.jpg');
+    background-position: center;
+    background-size: 100%;
+    
+}
+
+button:hover a{
+    color: rgba(255, 255, 255, 0);
+}
+
+@media screen and (max-width:600px)  {
+    #title {
+        font-size: 40px;
+    }
+
+    h1 {
+        text-shadow: 10px 10px black;
+        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-width: 2px;
+    }
+
+    button {
+        border: 1px solid black;
+        padding: 20px 100px;
+        box-shadow: 10px 10px black;
+        font-size: 25px;
+    }
+ }
