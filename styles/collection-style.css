@@ -3,7 +3,6 @@ body {
     overflow: hidden;
 }
 
-.content { 
-    background-image: url('../images/countryroad.jpg');
-    height: 100vh;
+.grid { 
+    display: grid;
 }

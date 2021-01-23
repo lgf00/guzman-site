@@ -121,7 +121,7 @@ button {
     background-position: top;
     border: 2px solid black;
     color: black;
-    padding: 15px 55px;
+    padding: 0;
     margin: auto 50px;
     box-shadow: 30px 30px black;
     display: inline-block;
@@ -132,9 +132,11 @@ button {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
     color: black;
     transition: color 200ms ease;
+    padding: 15px 55px;
 }
 
 button:hover {
